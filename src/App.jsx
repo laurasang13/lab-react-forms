@@ -55,7 +55,7 @@ function App() {
     <div className="App pt-20">
       <Navbar />
 
-      {/* FORM */}
+      {/* formulario */}
       <form className="form" onSubmit={handleSubmit}>
         <span>Add a Student</span>
         <div>
@@ -133,14 +133,14 @@ function App() {
         </div>
 
       </form>
-      {/* FORM END */}
+      
 
 
-      {/* TABLE/LIST HEADER */}
+      {/* header */}
       <TableHeader />
 
 
-      {/* STUDENT LIST */}
+      {/* Lista de estudiantes */}
       {students &&
         students.map((student) => {
           return <StudentCard key={student.email} {...student} />;
